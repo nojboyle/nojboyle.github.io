@@ -1,15 +1,54 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 <head>
-	<title> Noah Boyle's i6 Landing Page</title>
+	<title>Noah Boyle</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"> integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="mainstyles.css?v=5">
+	<style>
+      #p5canvas {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        width:100%;
+      }
+    </style>
+
 </head>
-<body> 
-	<h1> Noah Boyle's i6 Landing Page</h1>
-	<p> Please choose which class you would like to go to: </p>
-	<ul>
-		<li><a href="interactive"> Interactive Computing </a></li>
-		<li><a href="webdev"> Web Development and Programming</a></li>
-	</ul>
+<body>
+	<div class="header">
+	<h1> Noah Boyle</h1>
+	<img class="nyulogo" style="height:100px; width:100px;" src="nyulogo.png">
+</div>
+
+<div class= "navbar">
+	<a href="index.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="formContact2.html">Contact</a>
+    <a href="webdev/index.html">Web Development Portfolio</a>
+    <a href="js/index.html">p5.js Portfolio</a>
+    <a href="java/index.html">Java Portfolio</a>
+    <a href="uiux/index.html">UI/UX Design Portfolio</a>
+</div>
+
+<div class="main">
+	<!-- My extra credit: using javascript p5 library to create an animated background-->
+	<script src="sketch.js"></script>
+	<h1><u> Welcome to My Website! </u></h1>
+	<p></p>
+	<h3> My name is Noah Boyle and I am a aspiring Computer Science major at NYU. Here you can find portfolios of the different projects I have worked on in my undergraduate career, as well as my resume and other ways to contact me. </h3>
+	<img class="nyulogo" style="height: auto; width: auto;" src="myimage.jpg">
+	
+</div>
+<div class="foot">
+<footer>
+	<h3>© 2021 Noah Boyle</h3>
+</footer>
+</div>
 </body>
 </html>
-
