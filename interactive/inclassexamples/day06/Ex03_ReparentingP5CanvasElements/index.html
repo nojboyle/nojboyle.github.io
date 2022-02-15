@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- the standard p5 drawing and animation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+               integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"></script>
+
+    <!-- you can also load the p5 library from a local javascript file if you want to host it yourself (uncomment the following 'script' tag)-->
+    <!--script src="../js/p5.js"></script -->
+
+    <!-- your custom sketch file -->
+    <script src="sketch.js"></script>
+
+    <!-- custom CSS -->
+    <style type="text/css">
+      .demo {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Re-parenting a Canvas Element</h1>
+    <div class="demo" id="div1">
+      <p>This is Div #1</p>
+    </div>
+    <div class="demo" id="div2">
+      <p>This is Div #2</p>
+    </div>
+    <!-- note: normally the canvas would be appended here -->
+  </body>
+</html>

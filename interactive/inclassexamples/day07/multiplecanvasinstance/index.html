@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <h1> Lots of stuff </h1>
+    <script>
+    // p5 instance mode
+
+    let sketchCode1 = function(p) {
+
+
+      p.setup = function() {
+        p.createCanvas(200,200);
+        p.background(0);
+        p.noStroke();
+    }
+
+    p.draw = function() {
+      p.fill(p.random(255));
+      p.ellipse(p.random(200), p.random(200), 20, 20);
+    }
+
+
+
+    }
+
+    let sketch1 = new p5(sketchCode1);
+      let sketch2 = new p5(sketchCode1);
+      let sketch3 = new p5(sketchCode1);
+      let sketch4 = new p5(sketchCode1);
+      let sketch5 = new p5(sketchCode1);
+      let sketch6 = new p5(sketchCode1);
+      let sketch7 = new p5(sketchCode1);
+
+    </script>
+
+
+  </body>
+</html>

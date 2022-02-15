@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.header {
+	padding: 30px;
+	text-align: center;
+	background: #9900cc !important;
+	color: white;
+}
+
+footer {
+	padding: 30px;
+	text-align: center;
+	background: #9900cc !important;
+	color: white;
+}
+
+input [type=submit] {
+	background-color: #9900cc;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+input [type=submit]:hover {
+	background-color: #000;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #222;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+	color:white;
+}
+
+.navbar {
+	display: flex;
+	background-color: #222;
+}
+
+.navbar a {
+	color: white;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*.navbar a:link {
+	background-color: #000;
+	color: white;
+}*/
+
+.navbar a:hover {
+	background-color: #000;
+	color: white;
+}
+
+/*.navbar a:visited {
+	background-color: #000;
+	color: white;
+}*/
+
+.navbar a:active {
+	background-color: #6600cc;
+	color: white;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.side {
+	flex: 30%;
+	padding: 20px;
+}
+
+.main {
+	flex: 70%;
+	padding: 20px;
+	text-align: left;
+	color: white;
+}
+
+.gamemain {
+	flex: 70%;
+	padding: 20px;
+	text-align: left;
+	color: black;
+}
+
+.nyulogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+	padding: 10px;
+}
+
+.responsive {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  height: auto;
+  padding: 10px;
+}
+
+.foot {
+	padding: 5px;
+	text-align: center;
+}
+
+.form {
+	border-radius: 5px;
+	background-color: rgba(153, 0, 204, 0.5);
+	padding: 20px;
+}
+
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+	color:white;
+}
+
+.button1 {
+
+}
+
+@media (max-width: 700px){
+	.col-25, .col-75, input[type=submit]{
+		width: 100%;
+		margin-top: 0;
+	}
+	.row, .navbar{
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submmit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <title>Rolling Virtual Dice!</title>
+
+  
+  <link href="js_diceGame1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <h1 class=header> Play a game of chance using DOMS's images[], forms[] and elements array objects!</h1>
+
+<form>
+<p>
+<img src="dicpair1.gif" align="center" width="135" height="100">
+<img src="dicpair2.gif" align="center" width="135" height="78">
+<img src="dicpair3.gif" align="center" width="135" height="104"><br>
+</p>
+
+<h2>Die #1 is now <input name="die1" size="1" type="text"> 
+<img src="dice_1.gif" align="center" width="135" height="135">
+</h2>
+
+<h2>Die 2 is now <input name="die2" size="1" type="text">
+<img src="dice_1.gif" align="center" width="135" height="135">
+</h2>
+
+<h1>So, your total is: <input name="total" size="2" type="text"> 
+	<input value="roll the dice" onclick="rollIt()" type="button">
+	<input value="Reset" type="reset" />
+</h1>
+</form>
+  <script type="text/javascript" src="js_diceGame1.js"> </script>
+</body>
+</html>

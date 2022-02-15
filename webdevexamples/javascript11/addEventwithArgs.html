@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example demonstrates how to pass parameter values when using the 
+addEventListener() method.</p>
+
+<p>Click the button to perform a calculation.</p>
+
+<button id="myBtn">Try it</button>
+
+
+<p id="demo"></p>
+
+<script>
+
+
+let num1 = 5;
+let num2 = 7;
+
+// select/access object
+var obj = document.getElementById("myBtn");
+
+// add an event with click event
+obj.addEventListener("click", function()
+{
+	// pass arguments to a method
+	add(num1,num2);
+
+});
+
+// method that takes parameters 
+
+function add(num1, num2)
+{
+document.getElementById("demo").innerHTML = num1 + num2;
+
+}
+
+</script>
+
+</body>
+</html>

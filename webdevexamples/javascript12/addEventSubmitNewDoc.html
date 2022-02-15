@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Using onsubmit() event to validate an entire form</title>
+<style type="text/css">
+
+body {
+  background-color:#FFFFCC;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<h2 style="color:#f00"> Ice Cream Online Store! </h2>
+<p> Using onsubmit() event to validate an entire form </p>
+
+<!-- use onsubmit() event to trigger a function called validate1()-->
+
+<form action="#" >
+  First name: <input type="text" name="firstName" ><br>
+  Last name: <input type="text" name="lastName" ><br><br>
+
+  zip: <input type=number name=zip><p>
+     email: <input type=email name=email><p>
+
+  Select a flavor: <select name=flavor><p>
+
+      <option value="chocolate" selected>Chocolate</option>
+      <option value="Vanilla">Vanilla</option>
+
+      </select>
+      <p>
+
+      
+  Credit card: AMEX<input name="creditCard" type="radio" value="Amex" checked>
+              Visa<input name="creditCard" type="radio" value="Visa" >
+               
+
+<p>
+
+<p>Click "submit" to validate and display output (Receipt) inside element with id=demo or inside a new document.</p>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form> 
+
+<hr color="#F00">
+
+
+<p id="demo" style="backgroundColor:yellow; color:green"> Display ouput (Receipt) here or inside a new document</p>
+
+<!-- use external script validate.js-->
+
+<script type="text/javascript" src="addEventSubmitNewDoc.js"></script>
+</body>
+</html>
+

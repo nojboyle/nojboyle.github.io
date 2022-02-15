@@ -1,0 +1,16 @@
+/* js_diceGame1.css */
+
+body { 	background-color : #FFF;
+		text-align: center;    }
+		
+h2   {  text-align: center;		
+		color: olive;            }
+
+h1   {  text-align: center;		
+		color: maroon;			}
+
+p    {  text-align: center;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;     }
+

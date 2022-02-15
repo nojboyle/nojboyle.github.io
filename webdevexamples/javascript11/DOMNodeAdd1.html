@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> DOM Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c05.css">
+  </head>
+<body>
+
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ul>
+
+<p>Click the button to append an item to the end of the list.</p>
+
+<button id=bt1> append node</button>
+
+<script>
+
+var obj = document.getElementById("bt1");
+obj.addEventListener("click", myFunction);
+
+function myFunction() {
+	
+    var node = document.createElement("li");
+    var textnode = document.createTextNode("Water");
+    node.appendChild(textnode);
+    document.getElementById("myList").appendChild(node);
+
+    let node2 = document.createElement("li");
+	let textnode2 = document.createTextNode("green tea");
+	node2.appendChild(textnode2);
+
+     document.getElementById("myList").appendChild(node2);
+
+//querySelectorAll('li') is a method that selects an array collection of object of the same // type as all <p> or all <h1> or all <div> and so on.
+
+let listItems = document.querySelectorAll('li');                   // All <li> elements
+
+// ADD A CLASS OF COOL TO ALL LIST ITEMS
+
+let i; 
+                                                            // Counter variable
+for (i = 1; i < listItems.length; i++) {            
+// Loop through elements
+  listItems[i].className = 'cool';                                 // Change class to cool
+  
+}
+
+}
+</script>
+
+<p><strong>Note:</strong><br>First create an LI node,<br> then create a Text node,<br> then append the Text node to the LI node.<br>Finally append the LI node to the list.</p>
+
+</body>
+</html>

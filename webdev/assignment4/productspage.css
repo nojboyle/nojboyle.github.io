@@ -1,0 +1,63 @@
+body {
+  background-color: #fff;
+  background: url("concertbackground.jpg") no-repeat center center fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align:center;
+}
+
+textarea {
+	width: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align:center;
+}
+
+.totals {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.main {
+	flex: 70%;
+	padding: 20px;
+	text-align:center;
+	color: white;
+}
+
+div.transbox {
+  margin: 30px;
+  background: rgba(255, 255, 255, 0.6); 
+  border: 1px solid black;
+  white-space:nowrap;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.cartimages {
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 700px){
+	.cartimages{
+		width: 100%;
+		margin-top: 0;
+	}
+	.row, .navbar{
+		flex-direction: column;
+	}
+}

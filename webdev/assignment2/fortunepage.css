@@ -1,0 +1,49 @@
+body {
+  background-color: #fff;
+  background: url("fortunecookiebackground.jpg") no-repeat center center fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align:center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align:center;
+}
+
+.main {
+	flex: 70%;
+	padding: 20px;
+	text-align:center;
+	color: white;
+}
+
+.fortuneimages {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+	padding: 10px;
+}
+
+@media (max-width: 700px){
+	.col-25, .col-75, input[type=submit]{
+		width: 100%;
+		margin-top: 0;
+	}
+	.row, .navbar{
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submmit] {
+		width: 100%;
+		margin-top: 0;
+	}
+}

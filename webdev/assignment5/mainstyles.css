@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.header {
+	padding: 30px;
+	text-align: center;
+	background: #9900cc !important;
+	color: white;
+}
+
+footer {
+	padding: 30px;
+	text-align: center;
+	background: #9900cc !important;
+	color: white;
+}
+
+.navbar {
+	display: flex;
+	background-color: #222;
+}
+
+.navbar a {
+	color: white;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*.navbar a:link {
+	background-color: #000;
+	color: white;
+}*/
+
+.navbar a:hover {
+	background-color: #000;
+	color: white;
+}
+
+/*.navbar a:visited {
+	background-color: #000;
+	color: white;
+}*/
+
+.navbar a:active {
+	background-color: #6600cc;
+	color: white;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.side {
+	flex: 30%;
+	padding: 20px;
+}
+
+.main {
+	flex: 70%;
+	padding: 20px;
+	text-align: left;
+	color: white;
+}
+
+.gamemain {
+	flex: 70%;
+	padding: 20px;
+	text-align: left;
+	color: black;
+}
+
+.nyulogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+	padding: 10px;
+}
+
+.responsive {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  height: auto;
+  padding: 10px;
+}
+
+.foot {
+	padding: 5px;
+	text-align: center;
+}
+
+
+.button1 {
+
+}
+
+@media (max-width: 700px){
+	.row, .navbar{
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+}

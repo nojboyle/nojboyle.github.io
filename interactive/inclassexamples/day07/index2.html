@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <h1> Lots of stuff </h1>
+    <script>
+
+    let sketchCode1 = function(p) {
+
+
+      p.setup = function() {
+        p.createCanvas(windowWidth, 1500);
+        p.style('width', '');
+        p.style('height','');
+
+        background(0);
+        noStroke();
+    }
+
+    p.draw = function() {
+      p.fill(p.random(255));
+      p.ellipse(p.random(200), p.random(200), 20, 20);
+      p.background(0,10);
+      let x = p.random(0, width);
+      let y = p.random(0, height);
+      p.fill (p.random(255), p.random(255), p.random(255));
+      p.ellipse(x,y,20,20);
+    }
+
+    p.windowResized = function() {
+      p.resizeCanvas(windowWidth, 1500);
+    }
+
+
+
+    }
+
+    let sketch1 = new p5(sketchCode1);
+
+    </script>
+
+
+  </body>
+</html>

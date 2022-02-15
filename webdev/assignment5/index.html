@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Noah Boyle Web Development and Programming Web Site</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="mainstyles.css?v=3">
+	<style>
+
+      body 
+      #p5canvas {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        width:100%;
+      }
+    </style>
+<script type="text/javascript" src="asg2.js"></script>
+</head>
+<body>
+	<div class="header" id="div3">
+	<h1> Noah Boyle Web Development and Programming Web Site</h1>
+	<img class="nyulogo" style="height:100px; width:100px;" src="../nyulogo.png">
+</div>
+
+<div class= "navbar" id="div2">
+	<a href="../index.html">Home</a>
+	<a href="../about.html">About</a>
+	<a href="../formContact2.html">Contact</a>
+	<a href="../assignment2/index.html">Assignment 2</a>
+	<a href="../assignment3/index.html">Assignment 3</a>
+	<a href="../assignment4/index.html">Assignment 4</a>
+	<a href="index.html">Assignment 5</a>
+	<a href="../assignment6/index.html">Assignment 6</a>
+
+</div>
+<script src="../sketch.js"></script>
+<div class="main" id="div1">
+	<h2 id="h2"><u> Assignment #5: jQuery Applications</u></h2>
+	<hr>
+	<h3>Part 1: Style application</h3>
+	<br>
+	<button class="btn1">Change styles</button>
+	<h1 id="special">Special text that will change to green when Change styles is clicked</h1>
+	<div class="highlight"><h2>Click Change styles to change background color to yellow</h2></div>
+	<button class="btn2">Loops to manipulate all P elements style</button>
+	<h2>Click the button above to loop through each P element and change styles</h2>
+	<p>Hello, I am P1!</p>
+	<p>Hello, I am P2, P1 is my best friend.</p>
+	<p>Hello, I am P3, I hate P1 and P2.</p>
+	<button class="btn3">Loop through each P element and display HTML content</button>
+	<h2>Click the button above to display each P element HTML content</h2>
+	<hr>
+	<h3>Part 2: Image application</h3>
+	<img class="image1" style="height:300px; width:300px;" src="lanapicture.jpg">
+	<p>Lana Del Rey - "I guess I'm signin' off after all..." :(</p>
+	<h2>Click the buttons below to Show, hide or fade out an image.</h2>
+	<button class="btn4">Hide image</button>
+	<button class="btn5">Show image</button>
+	<button class="btn6">Fade out image</button>
+	<hr>
+	<h3>Part 3: Animation application</h3>
+	<button class="btn7">Animate</button>
+	<br>
+	<h2>Click the button above to animate the div below</h2>
+	<div class="animate1" style="background-color:pink;height:50px;width:50px;position:absolute;"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr>
+	<h3>Part 4: Username and password application</h3>
+	<h2>Username:</h2> <input type="text" name="username">
+	<h2>Password:</h2> <input type="text" name="password">
+	<div class="demo"><h2 id=demo>Demo</h2></div>
+	<br>
+	<hr>
+	<h3>Part 5: jQuery website</h3>
+	<a href="jQweb/index.html">Click here to go to my website made using jQuery!</a>
+	<br>
+</div>
+<footer id="foot">
+	<h3>© 2021 Noah Boyle</h3>
+</footer id="foot">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.btn1').click(function(){
+			$("#special").css("color","green");
+			$('.highlight').css("background-color","yellow");
+		});
+		$('.btn2').click(function(){
+			$("p").each(function(){
+				$("p").css("color","purple");
+				$("p").css("background-color","pink");
+				$("p").css("border-width","100px");
+				$("p").css("font-size","160%");
+				$("p").css("font-family","verdana");
+			});
+		});
+		$('.btn3').click(function(){
+			$("p").each(function(){
+				alert($(this).text())
+			});
+		});
+		$('.btn4').click(function(){
+			$(".image1").hide();
+		});
+		$('.btn5').click(function(){
+			$(".image1").show();
+		});
+		$('.btn6').click(function(){
+			$(".image1").fadeOut(5500);
+		});
+		$('.btn7').click(function(){
+			$(".animate1").animate({left: '300px'});
+			$(".animate1").animate({opacity: '0.5', height: '+=50px', width: '+=50px'})
+		});
+		$("input").focusout(function(){
+		if(!this.value)
+		{
+			focus++;
+			$(this).css("background-color","yellow");
+			alert("Please input a value for the field!");
+			if(this.value)
+			{
+				$(".demo").text(this.value);
+			}
+		}
+		else
+		{
+			$(".demo").text(this.value);
+		}
+		});
+	});
+</script>
+</body>
+</html>

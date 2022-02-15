@@ -1,0 +1,74 @@
+body {
+	background-image: url('backgroundimage2.png');
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+.mainContent {
+	width: 400px;
+	margin: auto;
+	margin-top: 100px;
+
+}
+
+video {
+	width: 100%;
+	height:auto;
+	margin: auto;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+p {
+	font-family: Verdana;
+	font-size: 1.2em;
+	text-align: center;
+	color: #C369FF;
+	background-color:#000000;
+}
+
+.nav {
+	font-family:  sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.links, .selected {
+	margin-left: 0.8em;
+	margin-right: 0.8em;
+	background-color:#000000;
+}
+
+.header {
+	font-family: sans-serif;
+	font-size: 4em;
+	text-align: center;
+	letter-spacing: 0.05em;
+	margin-top: 80px;
+	margin-bottom: 60px;
+	background-color:#000000;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #C369FF;
+}
+
+a:focus, a:hover {
+	color: pink;
+}
+
+a:active {
+	opacity: 0.5;
+}
+
+a.selected:link, a.selected:visited {
+	color: #C369FF;
+}

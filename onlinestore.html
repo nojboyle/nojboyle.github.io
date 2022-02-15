@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<link rel="stylesheet" type="text/css" href="style3.css" />
+</head>
+<body>
+	<div id="page-wrap">
+	<h1>Online Pet Adoption Store!</h1>
+	<h1>Please fill out the form areas and select the pets you wish to adopt to get your receipt.</h1>
+	<form action="online.php" method="GET">
+		Name: <input type="text" name="name"><br>
+		Email: <input type="text" name="email"><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="animal">Animal Type:</label>
+		<select name="animal" id="animal">&nbsp;&nbsp;&nbsp;
+			<option value="">Choose an animal type</option>
+			<option value="cat">Cat: $100</option>
+			<option value="dog">Dog: $200</option>
+		</select>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<br>
+		Quantity: <input type="number" name="quantity">&nbsp;&nbsp;<br>
+		<input type="submit">
+		<br>
+		<input name="reset" type="reset"/>
+	</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> onchange() with select </title>
+
+
+
+<body>
+
+	<h2> Demo on change with select and input </h2>
+
+Select your favorite movie<p>
+
+
+<select name=movie id=movie onchange="select()">
+    <option value=""> Select an option</option>
+    <option value="Stars Wars"> Stars Wars </option>
+    <option value="Balck Panther"> Balck Panther </option>
+
+</select>
+
+
+<p>
+<textarea type=text readonly id=result> Result </textarea>
+
+
+<p>
+
+    Enter how many Iphones:
+     <input type=number id=iphone onchange="total()">  
+     Price is:
+      <input type=number id=price readonly value=300>
+
+    Total is:<input type=number readonly id=subtotal>
+
+    
+
+
+<script type="text/javascript" src="addEventTotal.js"></script>
+
+</body>
+</html>

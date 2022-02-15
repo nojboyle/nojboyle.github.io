@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> DOM Examples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="c05.css">
+  </head>
+<body>
+
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+</ul>
+
+<hr>
+<p>
+<button id=bt1> append node</button>
+
+<p>
+<script>
+
+// select the object button
+let obj = document.querySelector("#bt1");
+
+// attach an event to the object button
+obj.addEventListener("click", myFunction);
+
+function myFunction() {
+	
+    // create a new node li
+    var node = document.createElement("li");
+
+    // create a text node "water" to place inside the new element
+    var textnode = document.createTextNode("Water");
+
+    // add the text node to the new element
+    node.appendChild(textnode);
+
+    // add the new node to the child of element with id = mylist
+    document.querySelector("#myList").appendChild(node);
+
+    // create a 2nd new element (li)
+    let node2 = document.createElement("li");
+
+    // create a new text node for this element
+	  let textnode2 = document.createTextNode("green tea");
+
+    // attach the new node to the new element
+	 node2.appendChild(textnode2);
+
+   // add this node to the child of element with id = mylist
+   document.querySelector("#myList").appendChild(node2);
+
+//querySelectorAll('li') is a method that selects an array collection of object of the same // type as all <p> or all <h1> or all <div> and so on.
+
+let listItems = document.querySelectorAll('li');                   // All <li> elements
+
+// ADD A CLASS OF COOL TO ALL LIST ITEMS
+
+let i; 
+                                                            // Counter variable
+for (i = 0; i < listItems.length; i++) {            
+ 
+  // Loop through elements to change all li elements to class cool
+  listItems[i].className = 'cool';                         
+  
+}
+
+}
+</script>
+
+<p><strong>Note:</strong><br>First create an LI node,<br> then create a Text node,<br> then append the Text node to the LI node.<br>Finally append the LI node to the list.</p>
+
+</body>
+</html>

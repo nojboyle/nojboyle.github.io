@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Noah Boyle Web Development and Programming Web Site</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="crapGame.css?v=3">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="crapGame.css?v=3">
+	<style>
+
+      body 
+      #p5canvas {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        width:100%;
+      }
+    </style>
+</head>
+<body>
+	<div class="header">
+	<h1> Noah Boyle Web Development and Programming Web Site</h1>
+	<img class="nyulogo" style="height:100px; width:100px;" src="../nyulogo.png">
+</div>
+
+<div class= "navbar">
+	<a href="../index.html">Home</a>
+	<a href="../about.html">About</a>
+	<a href="../formContact2.html">Contact</a>
+	<a href="../assignment2/index.html">Assignment 2</a>
+	<a href="index.html">Assignment 3</a>
+	<a href="../assignment4/index.html">Assignment 4</a>
+	<a href="../assignment5/index.html">Assignment 5</a>
+	<a href="../assignment6/index.html">Assignment 6</a>
+</div>
+<script type="text/javascript" src="crapGame.js"> </script>
+<script type="text/javascript" src="holidayCalendar.js"> </script>
+<div class="main">
+	<script src="../sketch.js"></script>
+	<h2><u> Assignment #3: Dice Roll Game</u></h2>
+	<form>
+	<p>
+	<img src="dicpair1.gif" align="center" width="135" height="100">
+	<img src="dicpair2.gif" align="center" width="135" height="78">
+	<img src="dicpair3.gif" align="center" width="135" height="104"><br>
+	</p>
+
+	<label for="betnumber">Input an amount of $ to bet:</label>
+	<input type="text" id="betnumber" name="betnumber">
+
+	<h2>Dice #1 rolled a: <input name="die1" size="1" type="text"> 
+	<img src="dice_1.gif" align="center" width="135" height="135">
+	</h2>
+
+	<h2>Dice #2 rolled a: <input name="die2" size="1" type="text">
+	<img src="dice_1.gif" align="center" width="135" height="135">
+	</h2>
+
+	<h2>Your dice total is: <input name="total" size="2" type="text"> 
+		<input value="Click to roll the dice!" onclick="crapGame()" type="button">
+		<input value="Click to reset!" type="reset" />
+	</h2>
+	<h2 id="result">Result:</h2>
+	</form>
+
+	<hr>
+	<h2><u> NYU Holiday Calendar Application</u></h2>
+	<label for="datechecker">Enter a date to see if it is classified as an NYU Holiday or not:</label>
+	<input type="date" id="datechecker" name="datechecker" onchange="holidayCalendar()">
+	<br>
+	<a href="https://www.nyu.edu/students/student-information-and-resources/registration-records-and-graduation/academic-calendar.html">Click here to double-check with the official NYU Holiday Calendar.</a>
+	<h2 id="output">Output:</h2>
+	<img src="../nyulogo.png" id="festive"; align="center"; width="500"; height="500";>
+</div>
+
+</body>
+<footer>
+	<h3>© 2021 Noah Boyle</h3>
+</footer>
+</html>

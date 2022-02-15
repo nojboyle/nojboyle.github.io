@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2> Demo adding and removing Events: </h2>
+
+<P> Click on first button to produce a random number and then click on 2nd button to remove the event from the first button.
+
+
+<button id="b1"> Click </button>
+<button id="b2"> Stop </button>
+
+<p id=p1> </p>
+
+
+
+<script>
+
+// click on bt1 to add event then click on bt2 to remove event 
+
+var obj1 = document.getElementById("b1");
+var obj2 = document.getElementById("b2");
+
+var p1 = document.getElementById("p1");
+
+// attach an event to the object1
+obj1.addEventListener("click", randn);
+
+
+// attach an event to the object2 
+obj2.addEventListener("click", stop);
+
+
+
+
+// add event
+function randn()
+{
+
+obj1.style.color="green";
+var rand = Math.random();
+p1.innerHTML += "<br>" + rand;
+
+}
+
+
+
+// remove event
+function stop()
+{
+
+// remove the event from object1 using removeEventListener() method
+
+obj1.removeEventListener("click", randn);
+
+}
+</script>
+
+</body>
+</html>
