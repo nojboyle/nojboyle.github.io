@@ -1,0 +1,11 @@
+Model Information:
+* title:	Autumn Leaves
+* source:	https://sketchfab.com/3d-models/autumn-leaves-5bdd2e302fe04e1781c30ba9ae3bcdee
+* author:	Ryan.chaney (https://sketchfab.com/Ryan.chaney)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Autumn Leaves" (https://sketchfab.com/3d-models/autumn-leaves-5bdd2e302fe04e1781c30ba9ae3bcdee) by Ryan.chaney (https://sketchfab.com/Ryan.chaney) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,11 @@
+Model Information:
+* title:	rune crystal
+* source:	https://sketchfab.com/3d-models/rune-crystal-64684cfd03a14285a75c8473647a4b15
+* author:	annakhobta (https://sketchfab.com/annakhobta)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "rune crystal" (https://sketchfab.com/3d-models/rune-crystal-64684cfd03a14285a75c8473647a4b15) by annakhobta (https://sketchfab.com/annakhobta) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
