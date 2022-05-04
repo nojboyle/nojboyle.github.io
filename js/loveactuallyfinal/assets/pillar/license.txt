@@ -1,0 +1,11 @@
+Model Information:
+* title:	Doric Pillar
+* source:	https://sketchfab.com/3d-models/doric-pillar-f5be847e525e401299f2a119372edd18
+* author:	lcoyne (https://sketchfab.com/lcoyne)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Doric Pillar" (https://sketchfab.com/3d-models/doric-pillar-f5be847e525e401299f2a119372edd18) by lcoyne (https://sketchfab.com/lcoyne) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
